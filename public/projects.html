@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Projects</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      body {
+        background-color: #f4f5f7;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+      }
+
+      h1,
+      h2 {
+        font-weight: 700;
+      }
+
+      /* Portfolio card */
+      .portfolio-card {
+        background: #ffffff;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        padding: 40px;
+        padding-bottom: 60px;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .portfolio-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 35px rgba(0, 0, 0, 0.15);
+      }
+
+      .portfolio-text {
+        margin-bottom: 30px;
+      }
+
+      .portfolio-title {
+        margin-bottom: 15px;
+        font-size: 1.8rem;
+      }
+
+      .portfolio-desc {
+        font-size: 1.1rem;
+        color: #555;
+      }
+
+      .img-slider {
+        position: relative;
+        overflow: hidden;
+        border-radius: 15px;
+      }
+
+      .img-slider img {
+        width: 100%;
+        display: none;
+        border-radius: 15px;
+      }
+
+      .img-slider img.active {
+        display: block;
+      }
+
+      .img-slider .arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        border: none;
+        padding: 10px 14px;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 1.3rem;
+        transition: background 0.3s;
+      }
+
+      .img-slider .arrow:hover {
+        background: rgba(0, 0, 0, 0.8);
+      }
+
+      .left-arrow {
+        left: 15px;
+      }
+
+      .right-arrow {
+        right: 15px;
+      }
+
+      /* Footer */
+      footer {
+        background: #0d0d0d;
+        color: #e5e5e5;
+        padding: 60px 20px;
+      }
+
+      footer a:hover {
+        color: #fff !important;
+      }
+
+      .social-icons a:hover {
+        color: #1db954 !important;
+      }
+
+      @media (max-width: 767px) {
+        .portfolio-card {
+          padding: 25px;
+          padding-bottom: 40px;
+        }
+        .portfolio-text {
+          margin-bottom: 25px;
+        }
+        .portfolio-title {
+          font-size: 1.5rem;
+        }
+        .portfolio-desc {
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand ms-5" href="index.html">
+          Malcolm Ng's Portfolio
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item me-3">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link" href="certification.html">Certifications</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link active" href="projects.html">Projects</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- PROJECTS -->
+    <main class="page-wrapper py-5">
+      <div class="container">
+        <!-- ------------------------------------------------------------ -->
+        <!-- PERSONAL PROJECTS -->
+        <!-- ------------------------------------------------------------ -->
+
+        <h2 class="text-center mt-5 mb-4">Personal Projects</h2>
+
+        <!-- PROJECT 1 -->
+        <section class="portfolio-section mb-5">
+          <div
+            class="row g-5 justify-content-center portfolio-card align-items-center"
+          >
+            <div class="col-md-6 portfolio-text">
+              <h2 class="portfolio-title">Personal Portfolio Website</h2>
+              <p class="portfolio-desc">
+                This e-portfolio website has been built using HTML, CSS,
+                JavaScript, and Bootstrap. This project showcases animations,
+                reusable components, and a clean layout structure.
+              </p>
+            </div>
+
+            <div class="col-md-6">
+              <div class="img-slider">
+                <img
+                  src="assets/Screenshot 2025-11-30 165756.png"
+                  class="slider-img active"
+                />
+                <img
+                  src="assets/Screenshot 2025-11-30 165818.png"
+                  class="slider-img"
+                />
+                <img
+                  src="assets/Screenshot 2025-11-30 165841.png"
+                  class="slider-img"
+                />
+                <button class="arrow left-arrow">&#10094;</button>
+                <button class="arrow right-arrow">&#10095;</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- PROJECT 2 -->
+        <section class="portfolio-section mb-5">
+          <div
+            class="row g-5 justify-content-center portfolio-card align-items-center"
+          >
+            <div class="col-md-6 portfolio-text">
+              <h2 class="portfolio-title">
+                Food Management Mobile Application
+              </h2>
+              <p class="portfolio-desc">
+                This project involved developing a mobile app using React Native
+                to help users track food inventory and reduce food waste. Built
+                with Firebase backend services.
+              </p>
+            </div>
+
+            <div class="col-md-6">
+              <div class="img-slider">
+                <img src="assets/sus (1).png" class="slider-img" />
+                <img src="assets/sus (2).png" class="slider-img" />
+                <img src="assets/sus (3).png" class="slider-img active" />
+                <img src="assets/sus (4).png" class="slider-img" />
+                <button class="arrow left-arrow">&#10094;</button>
+                <button class="arrow right-arrow">&#10095;</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ------------------------------------------------------------ -->
+        <!-- SCHOOL PROJECTS -->
+        <!-- ------------------------------------------------------------ -->
+
+        <h2 class="text-center mt-5 mb-4">School Projects</h2>
+
+        <!-- PROJECT 3 -->
+        <section class="portfolio-section mb-5">
+          <div
+            class="row g-5 justify-content-center portfolio-card align-items-center"
+          >
+            <div class="col-md-6 portfolio-text">
+              <h2 class="portfolio-title">IT Company Authentication Portal</h2>
+              <p class="portfolio-desc">
+                An authentication portal for an IT company using NodeJS &
+                ExpressJS for the backend and MongoDB for database management.
+              </p>
+            </div>
+
+            <div class="col-md-6">
+              <div class="img-slider">
+                <img
+                  src="assets/Screenshot 2025-11-30 120743.png"
+                  class="slider-img active"
+                />
+                <img
+                  src="assets/Screenshot 2025-11-30 120151.png"
+                  class="slider-img"
+                />
+                <button class="arrow left-arrow">&#10094;</button>
+                <button class="arrow right-arrow">&#10095;</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- PROJECT 4 -->
+        <section class="portfolio-section mb-5">
+          <div
+            class="row g-5 justify-content-center portfolio-card align-items-center"
+          >
+            <div class="col-md-6 portfolio-text">
+              <h2 class="portfolio-title">Event Discovery Web Application</h2>
+              <p class="portfolio-desc">
+                A full-stack web application enabling users to browse and
+                discover local events. Built using ExpressJS, MongoDB, REST APIs
+                and Git/GitHub for version control.
+              </p>
+            </div>
+
+            <div class="col-md-6">
+              <div class="img-slider">
+                <img
+                  src="assets/Screenshot 2025-11-30 124231.png"
+                  class="slider-img"
+                />
+                <img
+                  src="assets/Screenshot 2025-11-30 125141.png"
+                  class="slider-img active"
+                />
+                <img
+                  src="assets/Screenshot 2025-11-30 125324.png"
+                  class="slider-img"
+                />
+                <img
+                  src="assets/Screenshot 2025-11-26 095113.png"
+                  class="slider-img"
+                />
+                <button class="arrow left-arrow">&#10094;</button>
+                <button class="arrow right-arrow">&#10095;</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ------------------------------------------------------------ -->
+        <!-- HACKATHON PROJECTS -->
+        <!-- ------------------------------------------------------------ -->
+
+        <h2 class="text-center mt-5 mb-4">Hackathon Projects</h2>
+
+        <!-- PROJECT 5 -->
+        <section class="portfolio-section mb-5">
+          <div
+            class="row g-5 justify-content-center portfolio-card align-items-center"
+          >
+            <div class="col-md-6 portfolio-text">
+              <h2 class="portfolio-title">Gamified Cultural Museum</h2>
+              <p class="portfolio-desc">
+                A gamified cultural museum web platform built using HTML/CSS/JS
+                with a MySQL & NodeJS backend. Includes interactive features,
+                consistent maintenance, and scalable design.
+              </p>
+            </div>
+
+            <div class="col-md-6">
+              <div class="img-slider">
+                <img src="assets/hk1.png" class="slider-img active" />
+                <img src="assets/hk2.png" class="slider-img" />
+                <img src="assets/hk3.png" class="slider-img" />
+                <button class="arrow left-arrow">&#10094;</button>
+                <button class="arrow right-arrow">&#10095;</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="portfolio-section mb-5">
+          <div
+            class="row g-5 justify-content-center portfolio-card align-items-center"
+          >
+            <div class="col-md-6 portfolio-text">
+              <h2 class="portfolio-title">Prudential Mobile Application</h2>
+              <p class="portfolio-desc">
+                We identified the need for a mobile app to streamline
+                Prudential's internal processes after identifying the customer
+                needs of the problem statement. We then created wireframes for
+                the mobile application to be built.
+              </p>
+            </div>
+
+            <div class="col-md-6">
+              <div class="img-slider">
+                <img
+                  src="assets/Screenshot 2025-12-02 152921.png"
+                  class="slider-img active"
+                />
+                <img
+                  src="assets/Screenshot 2025-12-02 152909.png"
+                  class="slider-img"
+                />
+                <img
+                  src="assets/Screenshot 2025-12-02 153139.png"
+                  class="slider-img active"
+                />
+                <button class="arrow left-arrow">&#10094;</button>
+                <button class="arrow right-arrow">&#10095;</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- CONTACT FOOTER -->
+    <footer class="text-center">
+      <h2 class="mb-3" style="font-weight: 600">Contact Me</h2>
+      <p class="mb-1">
+        <strong>Email:</strong>
+        <a
+          href="mailto:ngfengkang@gmail.com"
+          style="color: #bbb; text-decoration: none"
+        >
+          ngfengkang@gmail.com
+        </a>
+      </p>
+      <p class="mb-1"><strong>Phone:</strong> +65 91743330</p>
+      <p class="mb-3"><strong>Location:</strong> Singapore</p>
+
+      <div class="social-icons mb-3">
+        <a href="#" aria-label="LinkedIn" class="mx-2">
+          <i class="bi bi-linkedin" style="font-size: 1.6rem; color: #bbb"></i>
+        </a>
+        <a href="#" aria-label="GitHub" class="mx-2">
+          <i class="bi bi-github" style="font-size: 1.6rem; color: #bbb"></i>
+        </a>
+        <a href="mailto:ngfengkang@gmail.com" aria-label="Email" class="mx-2">
+          <i
+            class="bi bi-envelope-fill"
+            style="font-size: 1.6rem; color: #bbb"
+          ></i>
+        </a>
+      </div>
+
+      <p style="font-size: 0.85rem; color: #666">
+        © 2025 Malcolm Ng. All rights reserved.
+      </p>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/anim.js"></script>
+  </body>
+</html>

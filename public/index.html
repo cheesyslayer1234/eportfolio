@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Malcolm Ng's E-Portfolio</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand ms-5" href="index.html"
+          >Malcolm Ng's Portfolio</a
+        >
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item me-3">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link" href="certification.html">Certifications</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section
+      class="hero"
+      style="
+        width: 100%;
+        height: 600px;
+        background-image: url('../assets/book.png');
+        background-size: cover; /* fills entire width + height */
+        background-position: center; /* keeps image centered */
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      "
+    >
+      <!-- Dark overlay -->
+      <div
+        style="
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.5);
+        "
+      ></div>
+
+      <!-- Hero Text -->
+      <div
+        style="position: relative; color: white; text-align: center; z-index: 2"
+      >
+        <h1 style="font-size: 50px; margin-bottom: 10px">I'm Malcolm Ng</h1>
+        <p style="font-size: 30px">Always Learning, Creating & Improving.</p>
+      </div>
+    </section>
+
+    <main>
+      <!-- ABOUT ME -->
+      <section class="py-5">
+        <div class="container mt-5">
+          <div class="row align-items-start">
+            <!-- Text -->
+            <div class="col-md-7">
+              <h2 class="fw-bold" style="color: black; margin-top: 0">
+                About Me
+              </h2>
+
+              <p class="portfolio-desc" style="font-size: 22px">
+                Hi! I'm Malcolm Ng, a Year 2 Temasek Polytechnic student
+                pursuing a Diploma in Information Technology. I have a strong
+                interest in web development and enjoy building visually
+                appealing, responsive, and functional applications. Over the
+                course of my studies and personal projects, I've developed
+                hands-on experience in front-end development, UI/UX design, and
+                working with various modern tools.
+              </p>
+
+              <p class="portfolio-desc" style="font-size: 22px">
+                Beyond coding, I enjoy exploring how technology can solve
+                real-world problems. I constantly challenge myself to learn new
+                techniques, improve my workflow, and stay updated with industry
+                trends. Whether it's creating a clean layout, debugging a
+                complex issue, or designing something entirely new, I approach
+                every project with curiosity and determination.
+              </p>
+
+              <p class="portfolio-desc" style="font-size: 22px">
+                I aim to continue growing as a developer by working on
+                meaningful projects, collaborating with others, and expanding
+                both my technical and creative skills.
+              </p>
+            </div>
+
+            <!-- Image -->
+            <div class="col-md-5 text-center mb-4 mb-md-0">
+              <img
+                src="assets/boy.jpg"
+                class="img-fluid rounded shadow"
+                style="margin-left: 40px"
+                alt="Photo of Malcolm"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="py-4">
+        <div class="container">
+          <!-- Skill 1 – LEFT -->
+          <div class="row align-items-center mb-5">
+            <div class="col-md-6">
+              <h3 class="fw-bold" style="color: black">Problem Solving</h3>
+              <p class="portfolio-desc">
+                I approach challenges with a structured and analytical mindset —
+                breaking them down, identifying root causes, and crafting
+                practical, efficient solutions. Whether it's debugging,
+                optimizing workflow, or improving user experience, I focus on
+                clarity, logic, and impactful results.
+              </p>
+            </div>
+            <div class="col-md-6 text-center">
+              <img
+                src="assets/1763622752864.jpeg"
+                class="img-fluid"
+                style="max-width: 500px"
+              />
+            </div>
+          </div>
+
+          <!-- Skill 2 – RIGHT -->
+          <div class="row align-items-center mb-5 flex-md-row-reverse">
+            <div class="col-md-6">
+              <h3 class="fw-bold" style="color: black">Flexibility</h3>
+              <p class="portfolio-desc">
+                I adapt quickly to new tools, technologies, and project
+                requirements. Whether working independently or in a team, I stay
+                open-minded and adjust my approach to meet evolving goals,
+                ensuring smooth collaboration and consistent progress.
+              </p>
+            </div>
+            <div class="col-md-6 text-center">
+              <img
+                src="assets/web.png"
+                class="img-fluid"
+                style="max-width: 500px"
+              />
+            </div>
+          </div>
+
+          <!-- Skill 3 – LEFT -->
+          <div class="row align-items-center mb-5">
+            <div class="col-md-6">
+              <h3 class="fw-bold" style="color: black">Continuous Learning</h3>
+              <p class="portfolio-desc">
+                I actively invest time into improving my technical foundations
+                and exploring new development trends. From experimenting with
+                new frameworks to refining UI/UX techniques, I believe
+                continuous growth is essential to becoming a better developer
+                every day.
+              </p>
+            </div>
+            <div class="col-md-6 text-center">
+              <img
+                src="assets/technology-web-application.jpg"
+                class="img-fluid"
+                style="max-width: 1000px"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer
+        style="
+          background: #0d0d0d;
+          color: #e5e5e5;
+          padding: 40px 20px;
+          text-align: center;
+          margin-top: 60px;
+        "
+      >
+        <h2 class="fw-semibold">Contact Me</h2>
+
+        <p>
+          <strong>Email:</strong>
+          <a
+            href="mailto:ngfengkang@gmail.com"
+            style="color: #bbb; text-decoration: none"
+          >
+            ngfengkang@gmail.com
+          </a>
+        </p>
+
+        <p><strong>Phone:</strong> +65 91743330</p>
+        <p><strong>Location:</strong> Singapore</p>
+
+        <div class="social-icons mt-3">
+          <a href="#" style="color: #bbb; font-size: 1.6rem; margin: 0 12px">
+            <i class="bi bi-linkedin"></i>
+          </a>
+
+          <a href="#" style="color: #bbb; font-size: 1.6rem; margin: 0 12px">
+            <i class="bi bi-github"></i>
+          </a>
+
+          <a
+            href="mailto:ngfengkang@gmail.com"
+            style="color: #bbb; font-size: 1.6rem; margin: 0 12px"
+          >
+            <i class="bi bi-envelope-fill"></i>
+          </a>
+        </div>
+
+        <p class="mt-4" style="font-size: 0.85rem; color: #666">
+          © 2025 Malcolm Ng. All rights reserved.
+        </p>
+      </footer>
+    </main>
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/anim.js"></script>
+  </body>
+</html>
