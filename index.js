@@ -9,11 +9,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 // Serve static frontend files
-app.use(express.static('./public'));
+app.use(express.static(__dirname));
 
 // Default route loader
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/public/' + startPage);
+    res.sendFile(__dirname + '/' + startPage);
 });
 
 // Start server
